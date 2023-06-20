@@ -1,0 +1,48 @@
+<FlexBox direction = "Column" class="sapUiLargeMarginBegin sapUiLargeMarginTop">
+
+                            <Label text="Email" labelFor="input-c" design="Bold"/>
+                            <Input value="cservice@4hatteras.com" id="input-c" width="50%" class="sapUiSmallMarginBottom"/>
+
+                            <Label text="Title" labelFor="input-d" design="Bold"/>
+                            <Input value="product feedback" id="input-d" width="50%" class="sapUiSmallMarginBottom"/>
+
+                            <Label text="Email Content" labelFor="input-b" design="Bold"/>
+                            <TextArea id="input-b" rows="7" cols="75" value="I have all sales firstclass versions from 2006 until today. On Saturday got the version WAREHOUSE Sales firstclass 20 Neo, had to be installed after the installation notice that the label of the buttons in the export screen are not readable (e.g. file format, navigation, compression, font, sort by etc. design the complete labeling under file options, title page and Design buttons. After an uninstallation and a new Installation has not shown in the export screen changed. Since I conduct warehouse training for company directors, a Proper work not possible."/>
+                        </FlexBox>
+                        <Button text="Predict" press="onPress" class="sapUiLargeMarginBegin sapUiSmallMarginTop"/>
+                        <Table items="{ path: 'oTableModel>/'}" id="idProductsTable" class="sapUiLargeMarginBegin sapUiLargeMarginTop sapUiLargeMarginEnd">
+                            <columns>
+                                <Column width="12em">
+                                    <Text text="Email" />
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Title" />
+                                </Column>
+
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Content" />
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Named Entity" />
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Score" />
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Class" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem vAlign="Middle">
+                                    <cells>
+                                        <Text text="{oTableModel>email}"/>
+                                        <Text text="{oTableModel>title}"/>
+                                        <Text text="{oTableModel>content}"/>
+                                        <!-- <Text text="{oTableModel>entity}"/> -->
+                                        <Text text="{oTableModel>HTML/HTML}"/>
+                                        <ObjectNumber number="{oTableModel>probability}" />
+                                        <ObjectStatus text="{oTableModel>class}" state="Indication04" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>

@@ -1,0 +1,193 @@
+3.	Acknowledgements
+
+I would like to acknowledge and extend myheartfelt gratitude to Prof. Anitha N, 
+My SAP Labs project supervisor had volunteered to provide essential help and advice in the development of this suggested project.
+Mrs. Rupali Arora and Mr. Saurabh Sharma deserve special mention for their help and guidance with project feedback and examinations.
+Without their encouragement and assistance, I would not have been able to finish my job.
+
+
+4.	Dissertation Abstract
+
+The goal of this project is to develop a highly intelligent machine learning model that can predict sentiment from sales emails.
+The goal is to provide a working UI dashboard with email template creation and a machine learning model. 
+Users can input data into the UI, and the machine learning model will analyse the data and make predictions that will aid salespeople in making decisions.
+It automates the procedure and decreases the time it takes for manual processes.
+
+
+Keywords: Machine Learning, Supervised Learning, Unsupervised Learning, Natural language processing 
+
+
+5.	List of Symbols & Abbreviations used
+
+UI – User Interface
+URI – Uniform Resource Identifier
+API –Application Programming Interface
+ML - Machine Learning
+NLP - Natural language processing 
+
+6.	List of Tables  
+
+Table 9.1–Complete Project Plan
+Table 10.1–Work Accomplished
+
+
+7.	List of Figures 
+
+Figure 7.1–Solution Architrcture 
+Figure7.2–Sequence Diagram for in-page automation
+Figure7.3–Sequence Diagram for calling desktop application from chatbot
+
+8.	Table of contents
+
+i. Cover Page
+ii. Title page
+iii. Acknowledgements
+iv. Dissertation Abstract
+v. List of Symbols & Abbreviations
+vi. List of Tables
+vii. List of Figures
+vii. Table of contents
+1. Introduction & Background
+2. Problem statement
+3. Objective of the project
+4. Uniqueness of the project
+5. Benefit to the organization
+6. Scope of work
+7. Solution architecture
+8. Resources needed
+9. Project plan & Deliverables
+10. Work accomplished
+11. Key challenges faced during the project
+12. Potential risks and mitigation plan
+13. Bibliography
+
+
+1. Introduction and Background
+
+The project is centered around the Natural language processing. NLP is a field of Artificial
+Intelligence that gives the machines the ability to read, understand and derive meaning from human
+languages. It can solve various problems related to natural languages like sentiment analysis, speech
+recognition and etc.
+
+The process of detecting positive or negative sentiment in text is known as sentiment analysis. 
+Businesses frequently utilise it to detect sentiment in social data, assess brand reputation, and gain a better understanding of their customers.
+Sentiment analysis is quickly becoming a crucial tool for monitoring and understanding sentiment in all forms of data, 
+as humans communicate their thoughts and feelings more openly than ever before.
+Brands can learn what makes customers happy or frustrated by automatically evaluating customer feedback, 
+such as comments in survey replies and social media dialogues. 
+This allows them to customise products and services to match their customers' demands.
+
+The sales process, often known as the sales cycle, is the process by which your organisation sells its product or service to clients. 
+From the initial contact with a lead through the final sale, it entails a sequence of processes.
+There are seven stages in the sales process but this project mainly deals with identification of leads.
+Prospect for potential customers.
+Make contact with prospects.
+Qualify prospects.
+Nurture prospects.
+Present your offer.
+Overcome objections.
+Close the deal.
+
+
+
+
+2. Problem Statement
+
+A sales lead is a person or business who may eventually become a client. 
+Sales lead also refers to the data that identifies an entity as a potential buyer of a product or service. 
+Businesses gain access to sales leads through advertising, trade shows, direct mailings, third parties, and other marketing efforts. 
+A sales lead is not really a sales "prospect" per se because a business would need to examine and qualify the potential new client further to determine their intent and interest.
+
+There are various types of sales leads, such as hot leads, cold leads, warm leads, information qualified leads, and so on.
+Salespeople spent more time reading marketing and campaign emails in order to discover leads who
+could become potential customers. The primary goal of this project is to eliminate the amount of time salespeople
+spend identifying sales leads.
+
+
+3. Objective of the project
+
+The main objective and outcome this project is to train sales data with both supervised and unsupervised alogorithm, 
+it will also extract named entity information from mail contents which can vital information to end users and 
+develop a rest for API using python and flask for the inference.
+There will be an machine learning solution that will assist salespeople in identifying leads more quickly
+and saving time, There will be UI dashboard made of UI5 framework where users can see the results and visualizations in graph. 
+the UI will also allow generating the template for sending emails to customer 
+Analysis on the possibility of integration with outlook.
+it solves the problem by reducing the the time and effort of sales people and allow sales team to sell products more effectively
+
+
+
+The major goal and conclusion of this project is to train sales data using both supervised and unsupervised algorithms, 
+as well as extract named entity information from mail contents that can be useful to end users, and construct a rest API using Python and Flask for inference.
+There will be a machine learning solution to help salespeople find prospects faster and save time, 
+as well as a UI dashboard built on the UI5 framework where customers can examine the results and graph visualisations.
+The user interface will also allow for the creation of a template for sending emails to customers, 
+as well as an examination of the possibilities of integrating with Outlook.
+It solves the problem by decreasing salespeople's time and effort, allowing them to sell things more successfully.
+
+
+
+
+4. Uniqueness of the project
+
+There is already a product in SAP for managing the sales leads and sales process, there is different processs involved in that tools.
+But mosttly its manual
+There also sales teams who does this kind of work manually.
+This project is elimanting manual work and also making the process more intelligent using machine leanring, its a niche area which only involves 
+email conversation.
+The dataset has been trained on both supervised and unsupervised alogorithm which will make ML model more intelligent
+in identfying the sentiment from email conversation.
+
+
+
+
+5. Benefit to the organization
+
+SAP has a solution for this called lead management, which controls the entire sales process, but it is a manual procedure.
+In SAP, there is a sales staff that keeps track of leads in excel and manually identifies sales leads.
+These are the benefits it provides to salespeople in SAP.
+
+• Reduce the time and effort for salesperson.
+• ML model to assist sales team.
+• Genereate named entity recognition from emails
+• UI dashboard to display the model results and leads information.
+• Generate a template for user which can be used for sending a mail.
+
+
+
+6. Scope of work
+
+The scope of this project is to create a machine learning model using supervised(SVN, random forest, naive bayes) 
+and unsupervised(text blob) learning classification alogorithm and train them with sales dataset
+which can be used for predicting different types sales leads, the ML nodel will also construct named entity recognition which can provide vital information 
+for decision making.
+There will be UI dashboard built on the UI5 framework where customers can examine the results and graph visualisations.
+The user interface will also allow for the creation of a template for sending emails to customers.
+
+
+The scope of this project is to develop a machine learning model using supervised(SVN, random forest, naive bayes) and unsupervised(text blob)
+earning classification algorithm and train it on a sales dataset that can be used to predict various types of sales leads. 
+The ML nodel will also construct named entity recognition, which can be useful for decision making.
+Customers will be able to study the results and graph visualisations using a UI dashboard developed on the UI5 framework.
+The user interface will also let you create a template for delivering emails to your consumers.
+
+
+
+11. Key Challenges
+
+The key challenges of this project so far have been:
+
+1. To get the correct labeled dataset for sales email coversation 
+2. To get good accuracy from suppervised learning algorithm 
+3. To design a UI for email template generation 
+4. Integrating the app with outlook 
+5. Designing the UI for data visualisations
+
+
+12. Potential risks and mitigation plan
+
+The most significant risk identified thus far has been connected to supervised model training accuracy, 
+which means that if data is not labelled correctly or there is insufficient data for training, the accuracy gained will be poor.
+To obtain high accuracy, the training data must be properly labelled and it should be in large quantities.
+
+

@@ -1,0 +1,68 @@
+<mvc:View controllerName="slo.salesleadsoverview.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:u="sap.ui.unified">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page-1" floatingFooter="true" showFooter="false" enableScrolling="false" showHeader="false" showNavButton="false">
+                    <content>
+                        <FlexBox justifyContent="Center" alignItems="Center" backgroundDesign="Translucent" direction = "Column" width="100%" height="100%">
+
+                            <FlexBox justifyContent="Center" alignItems="Center" backgroundDesign="Translucent" direction = "Row">
+                                <MultiInput type="email" id="multiInput1" width="25rem" height="30rem" showValueHelp="false"/>
+                                <Button type="Emphasized" class="sapUiLargeMarginBegin" text="Configure Email" press="handleConfgBtnPress"/>
+                            </FlexBox>
+
+                            <Table noDataText="Enter list of email in above input box." headerText="Email List" items="{ path: 'emModel>/'}" id="emailTokenTable" class="sapUiLargeMarginTop" width="48rem">
+                                <columns>
+                                    <Column width="15rem">
+                                    </Column>
+                                    <Column width="15rem">
+                                    </Column>
+                                    <Column width="15rem">
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Middle">
+                                        <cells>
+                                            <tnt:InfoLabel id="il2" text="{emModel>email1}" renderMode="Narrow" colorScheme="2"/>
+                                            <tnt:InfoLabel id="il3" text="{emModel>email2}" renderMode="Narrow" colorScheme="3"/>
+                                            <tnt:InfoLabel id="il4" text="{emModel>email3}" renderMode="Narrow" colorScheme="8"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </FlexBox>
+                    </content>
+                    <footer>
+                        <OverflowToolbar>
+                            <ToolbarSpacer/>
+                            <Button type="Emphasized" text="Next Step" press="onPage1FooterBtnPress"/>
+                        </OverflowToolbar>
+                    </footer>
+                </Page>
+                <Page id="page-2" floatingFooter="true" showFooter="false" enableScrolling="false" showHeader="false" showNavButton="true">
+                    <content>
+                        <FlexBox justifyContent="Center" alignItems="Center" backgroundDesign="Translucent" direction = "Column" width="100%" height="100%">
+
+                            <FlexBox justifyContent="Center" alignItems="Center" backgroundDesign="Translucent" direction = "Row">
+                                <u:FileUploader width= "25rem" id="fileUploader" change="onChange"/>
+                                <Button type="Emphasized" class="sapUiLargeMarginBegin" text="Generate Report" press="handleUploadPress"/>
+                            </FlexBox>
+
+                            <tnt:InfoLabel class="sapUiLargeMarginTop sapUiLargeMarginEnd" id="il5" visible="false" renderMode="Narrow" colorScheme="8"/>
+                        </FlexBox>
+                    </content>
+                    <footer>
+                        <OverflowToolbar>
+                            <ToolbarSpacer/>
+                            <Button type="Emphasized" text="Next Step" press="onPage2FooterBtnPress"/>
+                        </OverflowToolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

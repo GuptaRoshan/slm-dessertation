@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Popover id="purchase-popover" showHeader="false" contentWidth="25%" contentHeight="35%" placement="Left">
+        <Table id="named-entity-table"  headerText = "Sender Information">
+            <columns>
+                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+                    <Text text="Person"/>
+                </Column>
+                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+                    <Text text="Organization"/>
+                </Column>
+                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+                    <Text text="Location"/>
+                </Column>
+                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+                    <Text text="Date"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle">
+                    <cells>
+                        <Text text="{oPopoverModel>/0/entity/PERSON}"/>
+                        <Text text="{oPopoverModel>/0/entity/ORG}"/>
+                        <Text text="{oPopoverModel>/0/entity/GPE}"/>
+                        <Text text="{oPopoverModel>/0/entity/DATE}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Popover>
+</core:FragmentDefinition>
